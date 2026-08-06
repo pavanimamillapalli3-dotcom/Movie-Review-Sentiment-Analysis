@@ -27,6 +27,7 @@ plt.bar(sentiment_count.index,sentiment_count.values,color=["green","red"])
 plt.title("Sentiment Distribution")
 plt.xlabel("Sentiment")
 plt.ylabel("Number of Reviews")
+plt.savefig("Output/sentiment_distribution.png")
 plt.show()
 
 X=df["review"]
@@ -50,7 +51,7 @@ model.fit(X_train,y_train)
 y_pred=model.predict(X_test)
 
 accuracy=accuracy_score(y_test,y_pred)
-print("Accuracy:",accuracy)
+print(f"Accuracy: {accuracy:.4f}")
 
 new_review=["This movie is absolutely amazing. I loved it!"]
 

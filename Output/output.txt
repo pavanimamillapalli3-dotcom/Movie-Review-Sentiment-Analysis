@@ -1,0 +1,7 @@
+Accuracy: 0.8487
+
+Input Review
+
+This movie is absolutely amazing. I loved it!
+
+Predicted Sentiment: positive
